@@ -89,7 +89,7 @@ function spartan_custom_admin_footer() {
 
 
 
-	$spartan_admin_footer .= 'Developed for ';
+	$spartan_admin_footer = 'Developed for ';
 	$spartan_admin_footer .= '<a href="'. $client_url .'">';
 	$spartan_admin_footer .= $client;
 	$spartan_admin_footer .= '</a>. Made Awesome by ';
