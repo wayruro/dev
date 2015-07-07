@@ -104,5 +104,5 @@ function spartan_required_plugins() {
 
   );
 
-  tgmpa( $plugins, $config );
+  tgmpa( $plugins );
 }
