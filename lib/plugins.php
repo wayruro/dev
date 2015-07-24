@@ -59,6 +59,18 @@ function spartan_required_plugins() {
     ),
 
     array(
+      'name'    => 'Disable Comments',
+      'slug'    => 'disable-comments',
+      'required'  => true,
+    ),
+
+    array(
+      'name'    => 'WP Email Template',
+      'slug'    => 'wp-email-template',
+      'required'  => true,
+    ),
+
+    array(
       'name'    => 'Autoptimize',
       'slug'    => 'autoptimize',
       'required'  => true,
