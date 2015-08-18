@@ -88,6 +88,11 @@ function spartan_required_plugins() {
       'required'  => true,
     ),
 
+    array(
+      'name'    => 'Timber',
+      'slug'    => 'timber-library',
+      'required'  => true,
+    ),
 
     array(
       'name'    => 'Bad Behavior',
@@ -111,6 +116,12 @@ function spartan_required_plugins() {
     array(
       'name'    => 'WP Super Cache',
       'slug'    => 'wp-super-cache',
+      'required'  => true,
+    ),
+
+    array(
+      'name'    => 'WP Email Template',
+      'slug'    => 'wp-email-template',
       'required'  => true,
     )
 
