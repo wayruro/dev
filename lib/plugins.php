@@ -23,6 +23,13 @@ function spartan_required_plugins() {
     ),
 
     array(
+      'name'    => 'Blocks',
+      'slug'    => 'blocks',
+      'required'  => true,
+    ),
+
+
+    array(
       'name'    => 'Breadcrumb NavXT',
       'slug'    => 'breadcrumb-navxt',
       'required'  => true,
