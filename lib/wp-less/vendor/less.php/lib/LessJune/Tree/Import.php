@@ -231,24 +231,12 @@ class Less_Tree_Import extends Less_Tree{
 						$full_path = $path;
 						return array( $full_path, $uri );
 					}
-				}elseif( !empty($rootpath) ){
-
-
-					if( $rooturi ){
-						if( strpos($evald_path,$rooturi) === 0 ){
-							$evald_path = substr( $evald_path, strlen($rooturi) );
-						}
-					}
-
+				}else{
 					$path = rtrim($rootpath,'/\\').'/'.ltrim($evald_path,'/\\');
 
 					if( file_exists($path) ){
 						$full_path = Less_Environment::normalizePath($path);
 						$uri = Less_Environment::normalizePath(dirname($rooturi.$evald_path));
-						return array( $full_path, $uri );
-					} elseif( file_exists($path.'.less') ){
-						$full_path = Less_Environment::normalizePath($path.'.less');
-						$uri = Less_Environment::normalizePath(dirname($rooturi.$evald_path.'.less'));
 						return array( $full_path, $uri );
 					}
 				}
@@ -291,7 +279,7 @@ class Less_Tree_Import extends Less_Tree{
 	 */
 	private function Skip($path, $env){
 
-		$path = Less_Parser::winPath(realpath($path));
+		$path = realpath($path);
 
 		if( $path && Less_Parser::FileParsed($path) ){
 
