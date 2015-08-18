@@ -23,6 +23,7 @@ $spartan_includes = array(
   'lib/tools.php',
   'lib/overrides.php',
   'lib/shortcodes.php',
+  'lib/timber.php',
 
 );
 
