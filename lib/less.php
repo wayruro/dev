@@ -55,7 +55,7 @@ function spartan_login_scripts_and_styles() {
 
   global $wp_styles;
 
-	wp_register_style( 'wp-login', get_stylesheet_directory_uri() . '/assets/less/login.less', array(), '' );
+	wp_register_style( 'wp-login', get_stylesheet_directory_uri() . '/assets/less/admin/login.less', array(), '' );
 
 	wp_enqueue_style('wp-login');
 
@@ -68,7 +68,7 @@ add_action('login_enqueue_scripts', 'spartan_login_scripts_and_styles', 999);
 ================================================== */
 function spartan_remove_menu_items() {
 
-	wp_register_style( 'wp-remove', get_stylesheet_directory_uri() . '/assets/less/admin-remove.less', array(), 'all' );
+	wp_register_style( 'wp-remove', get_stylesheet_directory_uri() . '/assets/less/admin/remove.less', array(), 'all' );
 
 	wp_enqueue_style('wp-remove');
 
@@ -76,7 +76,7 @@ function spartan_remove_menu_items() {
 
 function spartan_highlight_menu_items() {
 
-	wp_register_style( 'wp-highlight', get_stylesheet_directory_uri() . '/assets/less/admin-highlight.less', array(), 'all' );
+	wp_register_style( 'wp-highlight', get_stylesheet_directory_uri() . '/assets/less/admin/highlight.less', array(), 'all' );
 
 	wp_enqueue_style('wp-highlight');
 
