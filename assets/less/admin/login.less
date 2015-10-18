@@ -4,6 +4,7 @@ body.login {
   line-height:1.5;
   height:100%;
   color: #fff;
+  border-top: 2px solid #00a0d2;
 
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAQACAIAAAAP+8yGAAACoklEQVR4Xu3dwQ0CMQxEUTtKvbRCC3RqjtwR3g3WSwP/MDOObaIlH89XdJ4VzQcAACBiZzcgMvs1AAAAAFCu3WiR3YCYcKMBACh2AKopgFJBA7Xoo4Fip1TQAEAtkmQASXZlalsAJLk/aC59AICdSQNJ7ge4DwRN0ORAbypociAHgsamliHWmlwkB7oKnZ0caH7lQA40v3LApmqRHPiBAsBCSvsOYCHFpuZkfZEcsCmbsqn2/XSbchGAHLApm3q9D6Cz07YAaB19oZWLaCAHbHoiwBf52BRADtiUTb1KAJAD384B8Gkbzx4APOyWAwAjlKCx6eQky4GgyYGgCZocAAiapSCAoLkPJBnA03QASZZkGgAoFVpHczKAWmQIVIsAAOxNARQ7AAB9kUEcQLn+/gCopgAAbjQ3Gg1cOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANV8aAAAAADwi7Pr/5+DVt2tAQAAgGK3I6oZUANEBgDQtigVACFoYQBhUwBBEzQAORA0NmVTOWBTADYlMptyEQCbEhnAOzsALjpPA88e6rJ3FUTmIi7Sm3IRF3ERkS1miaxUEFmpILJSURN6UyIT2QhlALHxIjKRiUxk+yKTPpGJbNInMpEN4sMARAawDBG06SIL2goi21UIGpFpcJlNjbFENuEQmQY0MGUaQEyZRBY0QRM0U6YpkwZEFjTrHFMmDTS/RCayKdOUacoUNH+4I2hENmX2AIhMZGMskWlgjCUyke2LNF5EJjINiExkGy8bL8uQCSIbxIlspcZFJn0iE1mpsEogsjGWi7iIi4jMRVzERfamAJaC52sAwEUANl5sCsCmXGRG89e6bEoDOWBTADmQAwBBk4MRAABJFjQAAIBqPvdrAPAGv7GBbaSCtb0AAAAASUVORK5CYII=");
   background-attachment: fixed;
@@ -15,7 +16,7 @@ body.login {
     overflow:hidden;
     display:block;
     color: rgba(255,255,255,0.8);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     height: auto !important;
     width: 100%;
@@ -61,16 +62,14 @@ body.login {
 
     .input {
       width:100%;
-      padding:3px;
+      padding:6px 10px;
       margin-top:2px;
-      margin-right:6px;
-      margin-bottom:16px;
+      margin-bottom:10px;
       border:1px solid #fff;
       background: #fff;
-      outline:none;
       -webkit-font-smoothing: subpixel-antialiased;
       color: #333333;
-      font-size: 19px;
+      font-size: 21px;
     }
 
 
@@ -78,8 +77,17 @@ body.login {
       color: rgba(255,255,255,0.95);
       font-weight: 300 !important;
       -webkit-font-smoothing: antialiased;
+      letter-spacing: 0.5px;
     }
 
+  }
+
+  * {
+    outline: none!important;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
   }
 
 } ///////////////////////////////.login
@@ -87,32 +95,31 @@ body.login {
 
 #login {
 
-  width:320px;
+  width:300px;
   padding:114px 10px 0;
 
   form {
 
-    p.forgetmenot,
+    // p.forgetmenot,
     p.submit {
       display:block;
       position:relative;
       clear:left;
+      margin:10px 0;
     }
 
-    p.submit {
-      margin-bottom:10px;
+    p.forgetmenot {
+      display: none;
     }
 
-    p.forgetmenot label,
+
+    // p.forgetmenot label,
     p.submit input {
       width:100%;
       display:block;
-      font-size:14px;
+      font-size:16px;
     }
 
-    p.submit input {
-      font-size:16px !important;
-    }
 
   }
 
@@ -131,8 +138,7 @@ body.login {
 
 .login form,
 .login #nav,
-.login #backtoblog,
-#login form p.forgetmenot {
+.login #backtoblog {
   width:100% !important;
   margin:5px auto;
   padding:0;
@@ -158,8 +164,10 @@ body.login:after {
 
   height:auto;
   text-align:center;
-  line-height:3em;
+  line-height:2.75em;
+  // line-height:3em;
   text-decoration:none;
+   letter-spacing: 1px;
   border:none;
 
   -webkit-box-shadow:none;
@@ -170,9 +178,19 @@ body.login:after {
 }
 
 
+.login #nav a {
+  font-size: 13px;
+
+
+  &:hover {
+    color: #123 !important;
+  }
+}
+
+
 input#wp-submit:hover,
 .login #nav a.hover,
-.login #nav a:hover,
+// .login #nav a:hover,
 .login #nav a.focus,
 .login #nav a:focus,
 .login #backtoblog a.hover,
@@ -189,20 +207,20 @@ input#wp-submit:hover,
 }
 
 
-body {
+// body {
 
-  &.login,
-  &.login-action-register {
+//   &.login,
+//   &.login-action-register {
 
-    #nav a:nth-of-type(1) {
-      display: block;
-      width: 100%;
-      background-color: #7ad03a;
+//     #nav a:nth-of-type(1) {
+//       display: block;
+//       width: 100%;
+//       background-color: #7ad03a;
 
-      &:hover {
-        background-color: #123;
-      }
-    }
-  }
+//       &:hover {
+//         background-color: #123;
+//       }
+//     }
+//   }
 
-}
+// }

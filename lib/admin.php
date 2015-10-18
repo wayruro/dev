@@ -47,7 +47,7 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
 ==================================================== */
 function spartan_content($content) {
 
-	$content .= '<h5>Thank you for developing with Spartan Theme.</h5>'. "\n";
+	$content = '<h5>Thank you for developing with Spartan Theme.</h5>'. "\n";
 	$content .= '<p>Read more about ';
 	$content .= '<a href="http://spartantheme.com" target="_blank">Spartan Theme here</a>';
 	$content .= '</p>'. "\n";
