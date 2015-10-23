@@ -72,6 +72,18 @@ function spartan_required_plugins() {
     ),
 
     array(
+      'name'    => 'Image Cleanup',
+      'slug'    => 'image-cleanup',
+      'required'  => true,
+    ),
+
+    array(
+      'name'    => 'Regenerate Thumbnails',
+      'slug'    => 'regenerate-thumbnails',
+      'required'  => true,
+    ),
+
+    array(
       'name'    => 'WP Email Template',
       'slug'    => 'wp-email-template',
       'required'  => true,
