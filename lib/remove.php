@@ -71,7 +71,7 @@ function spartan() {
 
 	add_action( 'init', 'spartan_head_cleanup' );
 	add_filter( 'the_generator', 'spartan_rss_version' );
-	// add_action( 'wp_enqueue_scripts', 'bones_scripts_and_styles', 999 );
+	// add_action( 'wp_enqueue_scripts', 'spartan_scripts_and_styles', 999 );
 
 }
 add_action( 'after_setup_theme', 'spartan' );

@@ -15,6 +15,7 @@
 $spartan_includes = array(
 
   'lib/less.php',
+  'lib/enqueue.php',
   'lib/admin.php',
   'lib/updates.php',
   'lib/plugins.php',
