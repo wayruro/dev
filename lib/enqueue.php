@@ -20,9 +20,9 @@ if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
 	  	// wp_dequeue_style( 'sf-main' );
     	// wp_deregister_style( 'original-register-stylesheet-handle' );
 
-			wp_register_style( 'app-' . SPARTAN_DEV_VERSION, get_stylesheet_directory_uri() . '/assets/less/app.less', array(), '' );
+			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', array(), '' );
 
-			wp_enqueue_style('app-' . SPARTAN_DEV_VERSION);
+			wp_enqueue_style('app';
 
 			wp_register_script( 'spartan-js', get_stylesheet_directory_uri() . '/assets/js/spartan.js', array( 'jquery' ), '', true );
 
