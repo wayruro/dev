@@ -22,7 +22,7 @@ if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
 
 			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', array(), '' );
 
-			wp_enqueue_style('app';
+			wp_enqueue_style('app');
 
 			wp_register_script( 'spartan-js', get_stylesheet_directory_uri() . '/assets/js/spartan.js', array( 'jquery' ), '', true );
 
