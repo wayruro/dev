@@ -64,23 +64,20 @@ function spartan_custom_admin_footer() {
 
 	// VARIABLES
 
+	$get_host = gethostname();
 	$iq ='server1.iquariusmedia.com' || 'server2.iquariusmedia.com';
-	$spartan = 'ns1.wayruro.com' || 'ns2.wayruro.com';
+	$spartan = 'xenon.websitewelcome.com';
 
-	if ( gethostname() == $iq ) {
 
-		$developer = 'iQuarius Media';
-		$developer_url = 'http://iquariusmedia.com';
-
-	} else if ( gethostname() == $spartan ) {
+	if ( $get_host == $spartan ) {
 
 		$developer = 'Renzo Johnson';
 		$developer_url = 'http://renzojohnson.com';
 
 	} else {
 
-		$developer = 'Renzo Johnson';
-		$developer_url = 'http://renzojohnson.com';
+		$developer = 'iQuarius Media';
+		$developer_url = 'http://iquariusmedia.com';
 
 	}
 
