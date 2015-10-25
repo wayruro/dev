@@ -11,6 +11,7 @@
  * @link https://github.com/SpartanTheme/st
  */
 
+define( 'SPARTAN_DEV_VERSION', '0.1.1' );
 
 $spartan_includes = array(
 
