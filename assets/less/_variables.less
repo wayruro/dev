@@ -1,13 +1,13 @@
 #variables {
-	opacity: 1;
+  opacity: 1;
 }
 
 // Web Fonts
 // ------------------------------------------------------------------
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic);
-// @import url(http://fonts.googleapis.com/css?family=Michroma);
-// @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
-// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic);
+// @import url(//fonts.googleapis.com/css?family=Michroma);
+// @import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+// @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 @lato: 'Lato', Arial, sans-serif !important;
 @oswald: 'Oswald', sans-serif;
@@ -18,35 +18,29 @@
 @hs: 'Lato', Arial, sans-serif;
 
 .body-weight {
-	font-weight: 400;
+  font-weight: 400;
 }
 
-.faw {
-	font-family: FontAwesome;
-	font-weight: normal;
-	font-style: normal;
-	text-decoration: inherit;
-	-webkit-font-smoothing: antialiased;
-}
+
 
 // .michro {
-// 	font-family: @hs;
+//  font-family: @hs;
 // }
 
 .lato {
-	font-family: @lato;
+  font-family: @lato;
 }
 
 .var-hs {
-	font-family: @hs;
-	line-height: 1.25em;
+  font-family: @hs;
+  line-height: 1.25em;
 }
 
 .var-body {
-	font-family: @body;
-	line-height: 1.25em;
-	color: @body-color;
-	.body-weight;
+  font-family: @body;
+  line-height: 1.25em;
+  color: @body-color;
+  .body-weight;
 }
 
 
@@ -57,49 +51,51 @@ h4,
 h4,
 h5,
 h6 {
-	.var-hs
+  .var-hs
 }
+
+
 
 // Brand colors
 // ------------------------------------------------------------------
 
-@brand:         				@accent;
-@brand-light:         	lighten(@brand, 10%);
-@brand-dark:         		darken(@brand, 10%);
+@brand:                 @accent;
+@brand-light:           lighten(@brand, 10%);
+@brand-dark:            darken(@brand, 10%);
 
-@body-color:         		rgba(58, 58, 58, 1);
+@body-color:            rgba(58, 58, 58, 1);
 
-@accent: 								rgba(236, 26, 41, 1);
-@accent-light:         	lighten(@accent, 10%);
-@accent-dark:         	darken(@accent, 10%);
+@accent:                rgba(236, 26, 41, 1);
+@accent-light:          lighten(@accent, 10%);
+@accent-dark:           darken(@accent, 10%);
 
 
-@green: 								#b3d41f;
-@dark-green: 						darken(@green, 10%);
+@green:                 #b3d41f;
+@dark-green:            darken(@green, 10%);
 
-@brown:         				#493B24;
-@blue:									#0d499c;
-@red:										#d50505;
+@brown:                 #493B24;
+@blue:                  #0d499c;
+@red:                   #d50505;
 
-@white: 								#ffffff;
-@black:									#000000;
+@white:                 #ffffff;
+@black:                 #000000;
 
-@gray:									#959595;
-@gray-light:						lighten(@gray, 10%);
-@gray-dark:							darken(@gray, 10%);
+@gray:                  #959595;
+@gray-light:            lighten(@gray, 10%);
+@gray-dark:             darken(@gray, 10%);
 
 
 
 .blue {
-	color: @blue !important;
+  color: @blue !important;
 }
 
 .fff {
-	color: @white !important;
+  color: @white !important;
 }
 
 .accent {
-	color: @accent !important;
+  color: @accent !important;
 }
 
 
@@ -107,229 +103,418 @@ h6 {
 // Gradients
 // ------------------------------------------------------------------
 .gr-blue() {
-	background: #004676;
-	background: -moz-linear-gradient(top,  #004676 0%, #00223c 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004676), color-stop(100%,#00223c));
-	background: -webkit-linear-gradient(top,  #004676 0%,#00223c 100%);
-	background: -o-linear-gradient(top,  #004676 0%,#00223c 100%);
-	background: -ms-linear-gradient(top,  #004676 0%,#00223c 100%);
-	background: linear-gradient(to bottom,  #004676 0%,#00223c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004676', endColorstr='#00223c',GradientType=0 );
+  background: #004676;
+  background: -moz-linear-gradient(top,  #004676 0%, #00223c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004676), color-stop(100%,#00223c));
+  background: -webkit-linear-gradient(top,  #004676 0%,#00223c 100%);
+  background: -o-linear-gradient(top,  #004676 0%,#00223c 100%);
+  background: -ms-linear-gradient(top,  #004676 0%,#00223c 100%);
+  background: linear-gradient(to bottom,  #004676 0%,#00223c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004676', endColorstr='#00223c',GradientType=0 );
 }
 
-.gr-gray {
-	background: #4b4b4b;
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRiNGI0YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  #4b4b4b 0%, #898989 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b4b4b), color-stop(100%,#898989));
-	background: -webkit-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
-	background: -o-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
-	background: -ms-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
-	background: linear-gradient(to bottom,  #4b4b4b 0%,#898989 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#898989',GradientType=0 );
+.gr-gray() {
+  background: #4b4b4b;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRiNGI0YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #4b4b4b 0%, #898989 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b4b4b), color-stop(100%,#898989));
+  background: -webkit-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
+  background: -o-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
+  background: -ms-linear-gradient(top,  #4b4b4b 0%,#898989 100%);
+  background: linear-gradient(to bottom,  #4b4b4b 0%,#898989 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#898989',GradientType=0 );
 
 }
 
-.gr-red {
-	background: #ad1c20;
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FkMWMyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZjIwMWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  #ad1c20 0%, #8f201d 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ad1c20), color-stop(100%,#8f201d));
-	background: -webkit-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
-	background: -o-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
-	background: -ms-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
-	background: linear-gradient(to bottom,  #ad1c20 0%,#8f201d 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad1c20', endColorstr='#8f201d',GradientType=0 );
+.gr-red() {
+  background: #ad1c20;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FkMWMyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZjIwMWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #ad1c20 0%, #8f201d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ad1c20), color-stop(100%,#8f201d));
+  background: -webkit-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
+  background: -o-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
+  background: -ms-linear-gradient(top,  #ad1c20 0%,#8f201d 100%);
+  background: linear-gradient(to bottom,  #ad1c20 0%,#8f201d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad1c20', endColorstr='#8f201d',GradientType=0 );
 
 }
 
 // Buttons
-// ------
+// ------------------------------------------------------------------
 .btn-lm {
-	color: @white;
-	&:after {
-		display: inline-block;
-		content: "\f101";
-		// content: "\f054";
-		color: @accent;
-		.faw;
-		padding-left: 1.5rem;
-		text-decoration: none !important;
-	}
+  color: @white;
+  &:after {
+    display: inline-block;
+    content: "\f101";
+    // content: "\f054";
+    color: @accent;
+    .faw;
+    padding-left: 1.5rem;
+    text-decoration: none !important;
+  }
 
-	&:hover {
-		color: #f7f7f7;
-		text-decoration: underline;
-	}
+  &:hover {
+    color: #f7f7f7;
+    text-decoration: underline;
+  }
 }
+
+
 
 // Alignments
 // ------------------------------------------------------------------
 .tac {
-	text-align: center;
+  text-align: center;
 }
 
 .tar {
-	text-align: right;
+  text-align: right;
 }
 
-.sm-tar {
-	text-align: center;
+.tal {
+  text-align: left;
 }
 
 
 
-// Margins & Paddings
+/// fotn weights
 // ------------------------------------------------------------------
-.dbl {
-	display: block;
+.fw1 {
+  font-weight: 100;
 }
 
-.dibl {
-	display: inline-block;
+.fw2 {
+  font-weight: 200;
 }
 
-.mb2 {
-	margin-bottom: 2rem !important;
+.fw3 {
+  font-weight: 300;
+}
+
+.fw4 {
+  font-weight: 400;
+}
+
+.fw5 {
+  font-weight: 500;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+.fw7 {
+  font-weight: 700;
+}
+
+.fw8 {
+  font-weight: 800;
+}
+
+.fw9 {
+  font-weight: 900;
 }
 
 
-.pl0 {
-	padding-left: 0 !important;
+
+// Font Line hights
+// ------------------------------------------------------------------
+.lh120() {
+  line-height: 1.2em;
 }
 
-.pr0 {
-	padding-right: 0 !important;
+.lh115() {
+  line-height: 1.15em;
 }
 
 
 
 // Font Sizes
 // ------------------------------------------------------------------
-.ttu {
-	text-transform: uppercase;
+.fz8 {
+  font-size: 0.8rem !important;
+  .lh12;
 }
 
-.fwb {
-	font-weight: 900;
+.fz10 {
+  font-size: 1.2rem !important;
+  .lh12;
 }
 
-.fwsb {
-	font-weight: 700;
+.fz12 {
+  font-size: 1.2rem !important;
+  .lh12;
 }
 
-.fwn {
-	font-weight: 400;
+.fz14 {
+  font-size: 1.4rem !important;
+  .lh12;
 }
 
-.fwl {
-	font-weight: 300;
+.fz15 {
+  font-size: 1.5rem;
+  .lh12;
 }
 
 .fz16 {
-	font-size: 1.6rem;
-	line-height: 1.2em;
+  font-size: 1.6rem;
+  .lh12;
 }
 
 .fz18 {
-	font-size: 1.8rem;
-	line-height: 1.2em;
+  font-size: 1.8rem;
+  .lh12;
 }
 
 .fz20 {
-	font-size: 2rem;
-	line-height: 1.2em;
+  font-size: 2rem;
+  .lh12;
 }
 
 .fz22 {
-	font-size: 2.2rem;
-	line-height: 1.2em;
+  font-size: 2.2rem;
+  .lh12;
 }
 
 .fz24 {
-	font-size: 2.4rem;
-	line-height: 1.2em;
+  font-size: 2.4rem;
+  .lh12;
 }
 
 .fz26 {
-	font-size: 2.6rem;
-	line-height: 1.2em;
+  font-size: 2.6rem;
+  .lh12;
 }
 
 .fz28 {
-	font-size: 2.8rem;
-	line-height: 1.2em;
+  font-size: 2.8rem;
+  .lh12;
 }
 
 .fz29 {
-	font-size: 2.9rem;
-	line-height: 1.2em;
+  font-size: 2.9rem;
+  .lh12;
 }
 
 .fz30 {
-	font-size: 3rem;
-	line-height: 1.2em;
+  font-size: 3rem;
+  .lh12;
 }
 
 .fz32 {
-	font-size: 3.2rem;
-	line-height: 1.2em;
+  font-size: 3.2rem;
+  .lh12;
 }
 
 .fz34 {
-	font-size: 3.4rem;
-	line-height: 1.2em;
+  font-size: 3.4rem;
+  .lh12;
 }
 
 .fz36 {
-	font-size: 3.6rem;
-	line-height: 1.2em;
+  font-size: 3.6rem;
+  .lh12;
 }
 
 .fz38 {
-	font-size: 3.8rem;
-	line-height: 1.15em;
+  font-size: 3.8rem;
+  .lh115;
 }
 
 .fz40 {
-	font-size: 4.0rem;
-	line-height: 1.15em;
+  font-size: 4.0rem;
+  .lh115;
 }
 
 .fz42 {
-	font-size: 4.2rem;
-	line-height: 1.15em;
+  font-size: 4.2rem;
+  .lh115;
 }
 
 .fz44 {
-	font-size: 4.4rem;
-	line-height: 1.15em;
+  font-size: 4.4rem;
+  .lh115;
 }
 
 .fz46 {
-	font-size: 4.6rem;
-	line-height: 1.15em;
+  font-size: 4.6rem;
+  .lh115;
 }
 
 .fz48 {
-	font-size: 4.8rem;
-	line-height: 1.15em;
+  font-size: 4.8rem;
+  .lh115;
 }
 
-.spacer {
-	color: transparent;
-	display: block;
-	width: 100%;
-	line-height: 1em;
-	margin-bottom: 1rem;
+.fz50 {
+  font-size: 5rem;
+  .lh115;
 }
 
-.bdt1pf {
-	border-top: 1px solid @white;
+.fz52 {
+  font-size: 5.2rem;
+  .lh115;
 }
 
-.bdt1p0 {
-	border-top: 1px solid @black;
+.fz54 {
+  font-size: 5.4rem;
+  .lh115;
+}
+
+.fz56 {
+  font-size: 5.6rem;
+  .lh115;
+}
+
+
+
+// Margins
+// ------------------------------------------------------------------
+.mt50 {
+  margin-top: 5rem;
+}
+
+.mt45 {
+  margin-top: 4.5rem;
+}
+
+.mt40 {
+  margin-top: 4rem;
+}
+
+.mt35 {
+  margin-top: 3.5rem;
+}
+
+.mt30 {
+  margin-top: 3rem;
+}
+
+.mt25 {
+  margin-top: 2.5rem !important;
+}
+
+.mt20 {
+  margin-top: 2rem !important;
+}
+
+.mt15 {
+  margin-top: 1.5rem !important;
+}
+
+.mt10 {
+  margin-top: 1rem !important;
+}
+
+.mb50 {
+  margin-bottom: 5rem;
+}
+
+.mb45 {
+  margin-bottom: 4.5rem;
+}
+
+.mb40 {
+  margin-bottom: 4rem;
+}
+
+.mb35 {
+  margin-bottom: 3.5rem;
+}
+
+.mb30 {
+  margin-bottom: 3rem;
+}
+
+.mb25 {
+  margin-bottom: 2.5rem !important;
+}
+
+.mb20 {
+  margin-bottom: 2rem !important;
+}
+
+.mb15 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb10 {
+  margin-bottom: 1rem !important;
+}
+
+
+// Paddings
+// ------------------------------------------------------------------
+.pt50 {
+  padding-top: 5rem;
+}
+
+.pt45 {
+  padding-top: 4.5rem;
+}
+
+.pt40 {
+  padding-top: 4rem;
+}
+
+.pt35 {
+  padding-top: 3.5rem;
+}
+
+.pt30 {
+  padding-top: 3rem;
+}
+
+.pt25 {
+  padding-top: 2.5rem !important;
+}
+
+.pt20 {
+  padding-top: 2rem !important;
+}
+
+.pt15 {
+  padding-top: 1.5rem !important;
+}
+
+.pt10 {
+  padding-top: 1rem !important;
+}
+
+.pb50 {
+  padding-bottom: 5rem;
+}
+
+.pb45 {
+  padding-bottom: 4.5rem;
+}
+
+.pb40 {
+  padding-bottom: 4rem;
+}
+
+.pb35 {
+  padding-bottom: 3.5rem;
+}
+
+.pb30 {
+  padding-bottom: 3rem;
+}
+
+.pb25 {
+  padding-bottom: 2.5rem !important;
+}
+
+.pb20 {
+  padding-bottom: 2rem !important;
+}
+
+.pb15 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pb10 {
+  padding-bottom: 1rem !important;
 }
 
 
@@ -351,6 +536,8 @@ h6 {
 :-ms-input-placeholder {
    color: @gray;
 }
+
+
 
 
 // *====================================================================================================
@@ -418,9 +605,6 @@ h6 {
 // Small Devices, Tablets  ==============================
 @media only screen and (max-width : 767px) {
 
-	.xstac {
-		text-align: center;
-	}
 
 }
 
