@@ -24,6 +24,7 @@ $spartan_includes = array(
   'lib/remove.php',
   'lib/tools.php',
   'lib/overrides.php',
+  'lib/options.php',
   'lib/shortcodes.php',
   'lib/timber/config.php',
 
