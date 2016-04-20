@@ -40,7 +40,7 @@ f);return this}})(window,document,jQuery);
 
 		$('.to-a-anchor').attr('id', 'iq-anchor');
 
-	  $('a.a-anchor[href*=#]:not([href=#])').click(function() {
+	  $('a.a-anchor[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
