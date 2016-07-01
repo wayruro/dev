@@ -53,8 +53,8 @@ function spartan_viewport_size() {
 
 	  $content .= '(function($){'. "\n";
 
-	  	$content .= '$(window).load(function() {'. "\n";
-	   		$content .= '   $("html").addClass("loaded")'. "\n";
+	  	$content .= '$(window).on("load", function() {'. "\n";
+	   		$content .= '   $("html").addClass("loaded sp")'. "\n";
 	  	$content .= '});'. "\n";
 
 			$content .= "\n";
