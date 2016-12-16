@@ -8,6 +8,24 @@
 *
 */
 
+/* Enqueue CSS ONLY
+================================================== */
+if ( ! function_exists( 'spartan_styles' ) ) {
+
+  function spartan_styles() {
+
+    if (!is_admin()) {
+
+        wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/less/app.less', false, null, all );
+
+    }
+
+  }
+  add_action('wp_print_styles', 'spartan_styles', 100);
+
+}
+
+
 /* Enqueue CSS and JS
 ================================================== */
 if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
@@ -49,6 +67,19 @@ if ( ! function_exists( 'spartan_login_scripts_and_styles' ) ) {
 	}
 	add_action('login_enqueue_scripts', 'spartan_login_scripts_and_styles', 999);
 }
+
+
+/* Dequeue unnecessary CSS and JS
+================================================== */
+function spartan_dequeue_unnecessary_styles() {
+
+  if (!is_admin()) {
+    wp_dequeue_style( 'sb_instagram_icons' );
+    wp_deregister_style( 'sb_instagram_icons' );
+  }
+
+}
+add_action( 'wp_print_styles', 'spartan_dequeue_unnecessary_styles' );
 
 
 /* Remove some admin menu items
