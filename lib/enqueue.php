@@ -8,23 +8,6 @@
 *
 */
 
-/* Enqueue CSS ONLY
-================================================== */
-if ( ! function_exists( 'spartan_styles' ) ) {
-
-  function spartan_styles() {
-
-    if (!is_admin()) {
-
-        wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/less/app.less', false, null, all );
-
-    }
-
-  }
-  add_action('wp_print_styles', 'spartan_styles', 100);
-
-}
-
 
 /* Enqueue CSS and JS
 ================================================== */
@@ -38,9 +21,9 @@ if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
 	  	// wp_dequeue_style( 'sf-main' );
     	// wp_deregister_style( 'original-register-stylesheet-handle' );
 
-			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', array(), '' );
+			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', false, null, all );
 
-			wp_enqueue_style('app');
+			// wp_enqueue_style('app'); enqued on wp_print_styles
 
 			wp_register_script( 'spartan-js', get_stylesheet_directory_uri() . '/assets/js/spartan.js', array( 'jquery' ), '', true );
 
@@ -49,7 +32,25 @@ if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
 	  }
 
 	}
-	add_action('wp_enqueue_scripts', 'spartan_scripts_and_styles', 999);
+	add_action('wp_enqueue_scripts', 'spartan_scripts_and_styles', 10000);
+}
+
+
+/* Enqueue CSS ONLY
+================================================== */
+if ( ! function_exists( 'spartan_styles' ) ) {
+
+  function spartan_styles() {
+
+    if (!is_admin()) {
+
+      wp_enqueue_style( 'app' );
+
+    }
+
+  }
+  add_action('wp_print_styles', 'spartan_styles', 10000);
+
 }
 
 
