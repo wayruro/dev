@@ -66,7 +66,7 @@ if ( ! function_exists( 'spartan_login_scripts_and_styles' ) ) {
 		wp_enqueue_style('wp-login');
 
 	}
-	add_action('login_enqueue_scripts', 'spartan_login_scripts_and_styles', 999);
+	add_action('login_enqueue_scripts', 'spartan_login_scripts_and_styles', 10000);
 }
 
 
