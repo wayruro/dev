@@ -43,6 +43,12 @@
   font-family: @lato;
 }
 
+.georgia,
+.geor,
+.serif {
+  font-family: 'Georgia', serif;
+}
+
 .var-hs {
   font-family: @hs;
   line-height: 1.25em;
@@ -151,6 +157,7 @@ h6 {
 
 }
 
+
 // Buttons
 // ------------------------------------------------------------------
 .btn-lm {
@@ -187,6 +194,8 @@ h6 {
   text-align: left;
 }
 
+
+
 // Text Transform
 // ------------------------------------------------------------------
 .ttu {
@@ -205,9 +214,24 @@ h6 {
   text-transform: none;
 }
 
-
-/// fotn weights
+// fotn weights
 // ------------------------------------------------------------------
+.fsi {
+  font-style: italic;
+}
+
+.fsn {
+  font-style: normal;
+}
+
+
+
+// fotn weights
+// ------------------------------------------------------------------
+.fwb {
+  font-weight: 900 !important;
+}
+
 .fw1 {
   font-weight: 100;
 }
@@ -544,6 +568,26 @@ h6 {
 
 .pb10 {
   padding-bottom: 1rem !important;
+}
+
+
+
+// Align columns vertically
+// ------------------------------------------------------------------
+.vcenter {
+
+  .row {
+    font-size: 0;
+
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+      margin-bottom: 1.2rem;
+    }
+
+  }
+
 }
 
 
