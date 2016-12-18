@@ -21,7 +21,7 @@ if ( ! function_exists( 'spartan_scripts_and_styles' ) ) {
 	  	// wp_dequeue_style( 'sf-main' );
     	// wp_deregister_style( 'original-register-stylesheet-handle' );
 
-			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', false, null, all );
+			wp_register_style( 'app', get_stylesheet_directory_uri() . '/assets/less/app.less', false, null, 'all' );
 
 			// wp_enqueue_style('app'); enqued on wp_print_styles
 
