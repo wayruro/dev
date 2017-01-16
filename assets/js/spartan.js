@@ -54,6 +54,35 @@ f);return this}})(window,document,jQuery);
 	  });
 
 
+    // var widest = 0, tallest = 0;
+
+    // // Loop through equalize elements
+    // $('.equalize').each( function() {
+
+    //   // Set width/height to widest/tallest elements
+    //   widest = $(this).width() > widest ? $(this).width() : widest;
+    //   tallest = $(this).height() > tallest ? $(this).height() : tallest;
+    // }).width(widest).height(tallest);
+
+
+    spartan_wdth_div();
+
+     $(window).resize(function(e) {
+
+       spartan_wdth_div();
+
+     });
+
+    function spartan_wdth_div() {
+
+        var greatestWidthx = $('.menu-right').width();   // Stores the greatest width
+        console.log(greatestWidthx)
+
+        $('.menu-left').width(greatestWidthx + 'px');     // Update the elements you were comparing
+
+    }
+
+
 
 	 // (function() {
 		// 	var ev = new $.Event('classadded'),
