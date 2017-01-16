@@ -64,6 +64,7 @@ f);return this}})(window,document,jQuery);
     //   tallest = $(this).height() > tallest ? $(this).height() : tallest;
     // }).width(widest).height(tallest);
 
+    // http://robido.com/jquery/use-jquery-to-match-height-or-width-of-elements-equalize-to-make-them-all-the-same-uniform-height-or-width/
 
     spartan_wdth_div();
 
