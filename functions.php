@@ -27,7 +27,7 @@ $spartan_includes = array(
   'lib/metaboxes.php',
   'lib/options.php',
   'lib/shortcodes.php',
-  'lib/timber/config.php',
+  'views/timber-init.php',
 
 );
 
