@@ -92,3 +92,23 @@ function spartan_viewport_size() {
 
 }
 add_action('wp_footer', 'spartan_viewport_size', 40 );
+
+
+if (!function_exists('spartan_print_scripts_styles')) {
+  function spartan_print_scripts_styles() {
+      // Print all loaded Scripts
+      global $wp_scripts;
+      foreach( $wp_scripts->queue as $script ) :
+          echo $script . '  **  ';
+      endforeach;
+
+      // Print all loaded Styles (CSS)
+      global $wp_styles;
+      foreach( $wp_styles->queue as $style ) :
+          echo $style . '  ||  ';
+      endforeach;
+  }
+
+  add_action( 'wp_print_scripts', 'spartan_print_scripts_styles' );
+}
+

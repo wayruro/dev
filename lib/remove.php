@@ -1,13 +1,21 @@
 <?php
 /* Remove some custom post types
   ================================================== */
-if ( ! function_exists( 'spartan_unregister_themcptypes' ) ) :
+if ( ! function_exists( 'spartan_unregister_theme_cptypes' ) ) :
 
   function spartan_unregister_theme_cptypes() {
 
       global $wp_post_types;
 
-      foreach( array( 'portfolio',  'galleries', 'team', 'clients', 'testimonials', 'jobs', 'faqs',  ) as $post_type ) {
+      foreach( array(
+        // 'portfolio',
+        // 'galleries',
+        // 'team',
+        // 'clients',
+        // 'testimonials',
+        // 'jobs',
+        // 'faqs',
+      ) as $post_type ) {
 
           if ( isset( $wp_post_types[ $post_type ] ) ) {
               unset( $wp_post_types[ $post_type ] );
@@ -17,7 +25,7 @@ if ( ! function_exists( 'spartan_unregister_themcptypes' ) ) :
   }
 
 endif;
-// add_action( 'init', 'spartan_unregister_theme_cptypes', 20 );
+add_action( 'init', 'spartan_unregister_theme_cptypes', 20 );
 
 
 
@@ -114,3 +122,28 @@ function spartan_user() {
 
 
 
+/* Enqueue scripts and styles
+==================================================== */
+if (!function_exists('spartan_disable_woocommerce_loading_css_js')) {
+  function spartan_disable_woocommerce_loading_css_js() {
+
+    // Check if WooCommerce plugin is active
+    if( function_exists( 'is_woocommerce' ) ){
+
+      // Check if it's any of WooCommerce page
+      if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+
+        ## Dequeue WooCommerce styles
+        wp_dequeue_style('woocommerce-layout');
+        wp_dequeue_style('woocommerce-general');
+        wp_dequeue_style('woocommerce-smallscreen');
+
+        ## Dequeue WooCommerce scripts
+        wp_dequeue_script('wc-cart-fragments');
+        wp_dequeue_script('woocommerce');
+        wp_dequeue_script('wc-add-to-cart');
+
+      }
+    }
+  }
+add_action( 'wp_enqueue_scripts', 'spartan_disable_woocommerce_loading_css_js' );
