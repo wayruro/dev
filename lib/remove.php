@@ -146,4 +146,5 @@ if (!function_exists('spartan_disable_woocommerce_loading_css_js')) {
       }
     }
   }
-add_action( 'wp_enqueue_scripts', 'spartan_disable_woocommerce_loading_css_js' );
+  add_action( 'wp_enqueue_scripts', 'spartan_disable_woocommerce_loading_css_js' );
+}
