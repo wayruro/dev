@@ -17,6 +17,18 @@ function spartan_required_plugins() {
   $plugins = array(
 
     array(
+      'name'    => 'P3 (Plugin Performance Profiler)',
+      'slug'    => 'p3-profiler',
+      'required'  => true,
+    ),
+
+    array(
+      'name'    => 'WP Fastest Cache',
+      'slug'    => 'wp-fastest-cache',
+      'required'  => true,
+    ),
+
+    array(
       'name'    => 'The Events Calendar',
       'slug'    => 'the-events-calendar',
       'required'  => true,
