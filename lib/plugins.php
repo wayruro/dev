@@ -145,12 +145,6 @@ function spartan_required_plugins() {
     ),
 
     array(
-      'name'    => 'WP Super Cache',
-      'slug'    => 'wp-super-cache',
-      'required'  => true,
-    ),
-
-    array(
       'name'    => 'WP Email Template',
       'slug'    => 'wp-email-template',
       'required'  => true,
