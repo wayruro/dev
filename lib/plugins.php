@@ -42,8 +42,14 @@ function spartan_required_plugins() {
 
 
     array(
-      'name'    => 'Breadcrumb NavXT',
-      'slug'    => 'breadcrumb-navxt',
+      'name'    => 'Wordfence Security',
+      'slug'    => 'wordfence',
+      'required'  => true,
+    ),
+
+    array(
+      'name'    => 'Cerber Security & Antispam',
+      'slug'    => 'wp-cerber',
       'required'  => true,
     ),
 
