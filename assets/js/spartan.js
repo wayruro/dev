@@ -75,7 +75,6 @@
 
 
 
-		// $('.fancybox').fancybox();
 
 		// $.get("http://ipinfo.io", function (response) {
 
@@ -84,6 +83,116 @@
 		//   $("#details").html(JSON.stringify(response, null, 4));
 
 		// }, "jsonp");
+
+    		//Start of Scroll Reveal defined Classes
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.grid', 50); //Apply on class grid
+    sr.reveal('.gallery-item', 50); //Apply on class gallery-item
+    sr.reveal('.sr');
+    sr.reveal('.sr-sq-wrpr .sr', 100);
+    sr.reveal('.sr-bottom300', {
+    	origin: 'bottom',
+    	delay: 300,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-bottom600', {
+    	origin: 'bottom',
+    	delay: 600,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-bottom900', {
+    	origin: 'bottom',
+    	delay: 900,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-bottom1200', {
+    	origin: 'bottom',
+    	delay: 1200,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+
+    sr.reveal('.sr-left300', {
+    	origin: 'left',
+    	delay: 300,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-left600', {
+    	origin: 'left',
+    	delay: 600,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-left900', {
+    	origin: 'left',
+    	delay: 900,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-left1200', {
+    	origin: 'left',
+    	delay: 1200,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+
+    sr.reveal('.sr-top300', {
+    	origin: 'top',
+    	delay: 300,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-top600', {
+    	origin: 'top',
+    	delay: 600,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-top900', {
+    	origin: 'top',
+    	delay: 900,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-top1200', {
+    	origin: 'top',
+    	delay: 1200,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+
+
+    sr.reveal('.sr-right300', {
+    	origin: 'right',
+    	delay: 300,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-right600', {
+    	origin: 'right',
+    	delay: 600,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-right900', {
+    	origin: 'right',
+    	delay: 900,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+      sr.reveal('.sr-right1200', {
+    	origin: 'right',
+    	delay: 1200,
+    	distance: '120px',
+        reset :'true'
+    }, 100);
+    //End of Scroll Reveal Classes
+
+
 
 	}); // $(document).ready
 
