@@ -4,18 +4,14 @@
 
 // Web Fonts
 // ------------------------------------------------------------------
-@import url(//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic);
-// @import url(//fonts.googleapis.com/css?family=Michroma);
-// @import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic);
-// @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url('//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic');
+// @import url('//fonts.googleapis.com/css?family=Michroma');
+// @import url('//fonts.googleapis.com/css?family=Arvo:400,700,400italic');
+// @import url('//fonts.googleapis.com/css?family=Montserrat:400,700');
+@body: 'SF Pro Text', -apple-system, -apple-system-font, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+@hs: 'SF Pro Text', -apple-system, -apple-system-font, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+@sys: 'SF Pro Text', -apple-system, -apple-system-font, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
 
-@lato: 'Lato', Arial, sans-serif !important;
-@oswald: 'Oswald', sans-serif;
-@arvo: 'Arvo', sans-serif;
-@mont: 'Montserrat', sans-serif;
-
-@body: 'Lato', Arial, sans-serif;
-@hs: 'Lato', Arial, sans-serif;
 
 .body-weight {
   font-weight: 400;
@@ -23,35 +19,17 @@
 
 .faw {
   font-family: FontAwesome;
-  font-style: normal;
-  font-variant: normal;
   font-weight: normal;
-  font-stretch: normal;
-  line-height: 1;
-  text-rendering: auto;
+  font-style: normal;
+  text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 
-
-// .michro {
-//  font-family: @hs;
-// }
-
-.lato {
-  font-family: @lato;
-}
-
-.georgia,
-.geor,
-.serif {
-  font-family: 'Georgia', serif;
-}
 
 .var-hs {
-  font-family: @hs;
-  line-height: 1.25em;
+  font-family: @hs !important;
+  line-height: 1.21em;
 }
 
 .var-body {
@@ -71,6 +49,7 @@ h5,
 h6 {
   .var-hs
 }
+
 
 
 
