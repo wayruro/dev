@@ -109,6 +109,6 @@ if (!function_exists('spartan_print_scripts_styles')) {
       endforeach;
   }
 
-  add_action( 'wp_print_scripts', 'spartan_print_scripts_styles' );
+  // add_action( 'wp_print_scripts', 'spartan_print_scripts_styles' );
 }
 
