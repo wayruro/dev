@@ -3,8 +3,8 @@
 @error_reporting(E_ALL | E_STRICT);
 @ini_set('display_errors', '1');
 
-$con = mysql_connect('localhost', 'onestop_wrdp1', '5QmJnHP3xiYs');
-$dbName = 'onestop_wrdp1';
+$con = mysql_connect('localhost', 'db-name-here', 'passpass');
+$dbName = 'db-name-here';
 
 $sql = "SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '".$dbName."';";
 $rs = mysql_query($sql, $con);
