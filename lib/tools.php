@@ -91,7 +91,13 @@ function spartan_viewport_size() {
   echo $content;
 
 }
-add_action('wp_footer', 'spartan_viewport_size', 40 );
+// add_action('wp_footer', 'spartan_viewport_size', 40 );
+
+if($_SERVER["REMOTE_ADDR"]=='50.89.186.124'){
+//run only my ip
+  add_action('wp_footer', 'spartan_viewport_size', 40 );
+}
+
 
 
 if (!function_exists('spartan_print_scripts_styles')) {
